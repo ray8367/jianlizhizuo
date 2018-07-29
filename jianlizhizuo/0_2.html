@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="css/0_1.css"/>
+		<script src="js/0_2_js.js"></script>
+	</head>
+	<body class="body2">
+		<div class="landing">
+			<form action="" method="post">
+				<h2>注册用户</h2>
+				<input type="text" name="user" id="user" placeholder="请输入用户名" required="required" oninvalid="setCustomValidity('请输入用户名')" oninput="setCustomValidity('')" /><br />
+				<input type="password" name="passwd" id="passwd" placeholder="请输入密码" required="required" oninvalid="setCustomValidity('请输入密码')"  oninput="setCustomValidity('')"><br />
+				<input type="password" name="passwd1" id="passwd1" placeholder="确认密码" required="required" oninvalid="setCustomValidity('请再次输入密码')"  oninput="setCustomValidity('')"/><br />
+				<input type="submit" value="立即注册"/><br />
+			</form>
+			<a href="0_1.html">已有账号登陆</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="0.html">取消注册</a>
+			<br /><br /><br />
+			<!--分割线-->
+			<div class="line">
+				<div class="left">
+					<hr />
+				</div>
+				<div>
+					第三方账号注册
+				</div>
+				<div class="right">
+				<hr />
+				</div>
+			</div>
+			
+			<!--第三方-->
+				<div class="icon">
+					<a href="https://wx.qq.com/" title="微信"></a>
+					<a href="http://web2.qq.com/" title="QQ"></a>
+					<a href="www.google.com." title="谷歌"></a>
+					<a href="https://weibo.com/login" title="新浪"></a>
+					<a href="javascript:;" onclick="more()" title="其它"></a>
+				</div>
+		</div>
+	</body>
+</html>

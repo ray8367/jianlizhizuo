@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>个人简历</title>
+		<link rel="stylesheet" type="text/css" href="css/1_css.css"/>
+		<script type="text/javascript" src="js/1_js.js"></script>
+	</head>
+	<body>
+		<!--工具栏-->
+		<div class="tool">
+			<a href="0.html">戳这里返回首页</a>
+			<p>工具栏</p>
+			<details>
+				<summary>基本资料</summary>
+				<table border="0" cellspacing="" cellpadding="">
+					<tr>
+						<td>
+							<input type="button" name="uname" id="uname" value="姓名" class="btn"/>
+						</td>
+						<td>
+							<input type="button" name="+" id="addUnm" value="+" class="btn"/>
+						</td>
+						<td>
+							<input type="button" name="-" id="vmUnm" value="-" class="btn"/>	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="button" id="age" value="年龄" class="btn"/>
+						</td>
+						<td>
+							<input type="button" id="addAge" value="+" class="btn"/>
+						</td>
+						<td>
+							<input type="button" id="vmAge" value="-" class="btn"/>	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="button" id="sex" value="性别" class="btn"/>
+						</td>
+						<td>
+							<input type="button" id="addSex" value="+" class="btn"/>
+						</td>
+						<td>
+							<input type="button" id="vmSex" value="-" class="btn"/>	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="button" id="like" value="爱好" class="btn"/>
+						</td>
+						<td>
+							<input type="button" id="addLike" value="+" class="btn"/>
+						</td>
+						<td>
+							<input type="button" id="vmLike" value="-" class="btn"/>	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="button" id="birth" value="出生日期" class="btn"/>
+						</td>
+						<td>
+							<input type="button" id="addBirth" value="+" class="btn"/>
+						</td>
+						<td>
+							<input type="button" id="vmBirth" value="-" class="btn"/>	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="button" id="major" value="专业" class="btn"/>
+						</td>
+						<td>
+							<input type="button" id="addMajor" value="+" class="btn"/>
+						</td>
+						<td>
+							<input type="button" id="vmMajor" value="-" class="btn"/>	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="button" id="eduhstr" value="学历" class="btn"/>
+						</td>
+						<td>
+							<input type="button" id="addEduhstr" value="+" class="btn"/>
+						</td>
+						<td>
+							<input type="button" id="vmEduhstr" value="-" class="btn"/>	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="button" id="nation" value="民族" class="btn"/>
+						</td>
+						<td>
+							<input type="button" id="addNation" value="+" class="btn"/>
+						</td>
+						<td>
+							<input type="button" id="vmNation" value="-" class="btn"/>	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="button"  id="contact" value="联系方式" class="btn"/>
+						</td>
+						<td>
+							<input type="button"  id="addCtt" value="+" class="btn"/>
+						</td>
+						<td>
+							<input type="button"  id="vmCtt" value="-" class="btn"/>		
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="button"  id="theElse" value="其他" class="btn"/>
+						</td>
+						
+					</tr>
+				</table>
+			
+			</details>
+			<details>
+				<summary>求职意向</summary>
+				<table border="0" cellspacing="" cellpadding="">
+					<tr>
+						<td>
+							<input type="button" id="post" value="职位" class="btn"/>
+						</td>
+						<td>
+							<input type="button" id="addPost" value="+" class="btn"/>
+						</td>
+						
+					</tr>
+				</table>
+			</details>
+			<details>
+			<summary>教育背景</summary>
+			<input type="button" id="eduBack" value="拖拽添加" class="btn"/>
+			</details>
+			<details>
+				<summary>职业技能</summary>
+				<input type="button" id="vss" value="拖拽添加" class="btn"/>
+			</details>	
+			<details>
+				<summary>自我评价</summary>
+			<input type="button" id="myself" value="拖拽添加" class="btn"/>
+			</details>
+		</div>
+		<div class="paper1">
+			<div class="content" contenteditable="true">
+				<h2 style="text-align: center; margin-bottom: 20px;">个人简历</h2>
+				<!--基本资料（表格1）-->
+				<table border="0" cellspacing="0" class="table1">
+					<p>基本资料</p>
+				<tr>
+					<td>姓名:</td>
+					<td><input type="text" placeholder="you name" class="inpt_data"/></td>
+					<td>学历:</td>
+					<td><input type="text" placeholder="大专" class="inpt_data"/></td>
+				</tr>
+				<tr>
+					<td>性别:</td>
+					<td><input type="text" placeholder="男" class="inpt_data"/></td>
+					<td>爱好:</td>
+					<td><input type="text" placeholder="读书、游戏、音乐、跳舞" class="inpt_data"/></td>
+				</tr>
+				<tr>
+					<td>出生日期:</td>
+					<td><input type="text" placeholder="2018/4/17" class="inpt_data"/></td>
+					<td>专业:</td>
+					<td><input type="text" placeholder="软件开发" class="inpt_data"/></td>
+				</tr>
+				<tr>
+					<td>民族:</td>
+					<td><input type="text" placeholder="汉族" class="inpt_data"/></td>
+					
+				</tr>
+				<!--求职意向（表格2）-->
+				</table>
+				<div class="table2">
+					<p>求职意向</p>
+					<ul>
+						<li><input type="text" placeholder="戳我填写职位信息" class="inpt_can"/><span></span></li>
+						<li><input type="text" placeholder="戳我填写职位信息" class="inpt_can"/><span></span></li>
+						<li><input type="text" placeholder="戳我填写职位信息" class="inpt_can"/><span></span></li>
+					</ul>
+				</div>
+				<!--教育背景（表格3）-->
+				<div class="table3">
+					<p>教育背景</p>
+					<tr>
+						<textarea></textarea>
+					</tr>
+				</div>
+				<!--职业技能（表格4）-->
+				<div class="table4">
+					<p>职业技能</p>
+					<tr>
+						<textarea></textarea>
+					</tr>
+				</div>
+				<!--自我评价（表格5）-->
+				<div class="table5">
+					<p>自我评价 </p>
+					<tr>
+						<textarea></textarea>
+					</tr>
+				</div>
+			</div>
+		</div>
+		<!--样式设置-->
+		<div class="mystyle">
+			<!--<p>在这里设置我的简历样式</p>-->
+			<!--<p>选择背景颜色:<input type="color" name="lovecolor" id="lovecolor" value="#fff" />(请选择你喜欢的颜色 )</p>-->
+			<br /><br />
+			<p style="color: #fff;">选择背景图案：</p>
+			<ul>
+				<li><img src="img/bg-min/4.png"/><p>旗舰白</p></li>
+				<li><img src="img/bg-min/3.png"/><p>原谅绿</p></li>
+				<li><img src="img/bg-min/2.png"/><p>胖次蓝</p></li>
+				<li><img src="img/bg-min/1.png"/><p>复古风</p></li>
+			</ul>
+		</div>
+	</body>
+</html>

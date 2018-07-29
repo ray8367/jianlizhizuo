@@ -1,0 +1,198 @@
+﻿
+/*清除默认样式*/
+*{
+	margin:0;
+	padding: 0;
+	background: none;
+	/*color: #fff;*/
+}
+body{
+	width: 1000px;
+	height: 1000px;
+	background: #abc;
+	/*margin: 0 auto;*/
+	background: url(../img/bg_0/1.jpg) no-repeat;	
+	background-attachment: fixed;
+	height: 100%;
+	width: 100%;
+	background-size:cover;
+}
+/*纸张样式 A4纸大小*/
+.paper1,.paper2{
+	width:595px;
+	height: 842px;
+	background: #fff url(../img/bg/1.jpg);
+	position:relative;
+	margin: 30px 200px;
+	overflow: auto;
+	/*float: left;*/
+}
+/*纸张内容区*/
+.content{
+	width:495px;
+	height: 745px;
+	/*border:1px dashed;*/
+	background: #fff url;
+	position: absolute;
+	top:50px;
+	left:50px;
+	font-size: 16px;
+}
+/*小标题*/
+.content p{
+	text-align:left;
+	/*background:#ccc;*/
+	/*background-image:linear-gradient(90deg,rgb(50,174,180),rgb(101,182,173))*/
+}
+/*基本资料中的奇数栏*/
+td:nth-child(odd){
+	text-align:right;
+}
+/*基本资料中的偶数栏*/
+.table1 td:nth-child(even){
+	/*background: yellow;*/
+	width: 100px;
+}
+/*基本资料文本框*/
+.inpt_data{
+	border: none;
+	margin-left: 5px;
+}
+/*求职意向文本框*/
+.inpt_can{
+	border: none;
+	width: 120px;
+	margin-right: 20px;
+}
+/*文本框提示文字样式*/
+.inpt_data::-webkit-input-placeholder,.inpt_can::-webkit-input-placeholder{
+	font-style:italic;
+	font-size: 12px;
+}
+
+tr{
+	height: 30px;
+}
+/*多行文本框*/
+textarea{
+	width: 100%;
+	height: 100px;
+	resize:none;
+	border: none;
+}
+/*工具栏样式*/
+.tool{
+	width:150px;
+	/*display: none;*/
+	height: 100%;
+	background:#fff;
+	opacity: 0.5;
+	float: left;
+	/*margin-left: 30px;*/
+	/*position:absolute;*/
+	position:fixed;
+	top:30px;
+	left:20px;
+	padding-top:10px;
+	padding-left:10px ;
+	border-top-left-radius: 15px;
+}
+.tool a{
+	color: #666;
+	text-decoration: none;
+}
+.tool a:hover{
+	text-decoration: underline;
+}
+.tool .btn{
+	border: none;
+	background:transparent;
+	margin:0 10px;
+	font-size:16px;
+	cursor:pointer;
+	color: #333;
+	}
+.tool .btn:hover{
+	color: #000;
+	font-weight: bold;
+}
+	summary{
+	cursor:pointer;
+	}
+	summary:hover{
+		color: #000;
+	font-weight: bold;
+	}
+/*求职意向 样式*/
+/*.table2{background: yellow;}*/
+.table2:after{
+	content:"";
+	display:table;
+	clear: both;
+}
+.table2 li{
+	list-style: none;
+	/*background: yellow;*/
+	float: left;
+	/*padding-bottom: 10px;*/
+}
+.table2 li span{
+	display:inline-block;
+	width: 22px;
+	height: 22px;
+	background: url(../img/cha.png) no-repeat;
+	background-size: 15px;
+	visibility: hidden;
+	margin-right:2px;
+	/*font-size:10px;*/
+	cursor: pointer;
+}
+.table2 li:hover span{
+	/*display: inline-block;*/
+	visibility: visible;
+	
+}
+
+.mystyle{
+	width:550px;
+	height:100%;
+	/*background:#fff;
+	opacity: 0.8;*/
+	position: fixed;
+	top: 30px;
+	left: 815px;
+	padding-left: 30px;
+	/*border: 1px solid #ccc;*/
+	border-top-right-radius: 15px;
+}
+.mystyle img{
+	width: 100px;
+	height: 150px;
+}
+.mystyle ul{
+	/*background: yellow;*/
+	width:520px;
+	height: 200px;
+	
+}
+.mystyle li{
+	width: 30px;
+	float: left;
+	list-style: none;
+	margin: 15px;
+	text-align: center;
+	color: #666;
+	cursor: pointer;
+	-webkit-transition: width;
+	-webkit-transition-duration:3s;
+}
+
+.mystyle ul:hover li{
+	width: 100px;
+	-webkit-transition: width;
+	-webkit-transition-duration:2s;
+}
+.mystyle li:hover{
+	color: #fff;
+	
+}

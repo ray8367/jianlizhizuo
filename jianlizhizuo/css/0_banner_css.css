@@ -1,0 +1,104 @@
+
+.banner{
+	/*width: 1000px;*/
+	position:relative;
+	text-align: center;
+	overflow: hidden;
+}
+/*箭头切换*/
+.trun{
+	width: 100%;
+	height:60px;
+	/*background: #ccc;*/
+	position: absolute;
+	top:145px;
+	display:none;
+	z-index: 9999;
+	}
+
+.trun_right,.trun_left{
+	width:30px;
+	background:rgba(255,255,255,0.5);
+	color: #000;
+	height: 60px;
+	opacity:0.5;	
+	font-size:20px;
+	float: left;
+	line-height: 60px;
+	text-align: center;
+	cursor:pointer;
+	
+}
+.trun_left{
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+}
+.trun_right{
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+	float: right;
+}
+/*鼠标移动到图片上时显示箭头*/
+.banner:hover .trun{
+	display: block;
+}
+/*点状切换*/
+.trun2{
+	width: 120px;
+	border-radius:10px;
+	/*background:#666666;*/
+	z-index:9999;
+	position:absolute;
+	bottom:10px;
+	left:220px;
+}
+.trun2 .one_btn{
+	background: red;
+}
+.trun_btn{
+	background:#fff;
+	opacity: 0.7;
+	display: inline-block;
+	border-radius:8px;
+	width:25px;
+	height:5px;
+	/*margin-left: 10px;*/
+}
+.trun_btn:hover{
+	background: red;
+}
+.banner img{
+	z-index:1;
+	position:absolute;
+	top: 0px;
+	left: 15px;
+	display:none;
+}
+/*设置动画*/
+@-webkit-keyframes appear{
+	from{opacity: 0.2;}
+	to{opacity: 1;}
+}
+.appear{
+	-webkit-animation:appear 3s 1;
+}
+@-webkit-keyframes disappear{
+	from{opacity: 1;}
+	to{opacity: 0.2;}
+}
+.disappear{
+	-webkit-animation:disappear 3s 1;
+}
+.imgbg{
+	background: red repeat-x;
+	width:1000px;
+	height: 1000px;
+	/*position:fixed;*/
+	top:0px;
+	left: 0px;
+}
+.trunBg{
+	/*width: 100px;*/
+	-webkit-transition:background-color;
+	-webkit-transition-duration:2s;
+}

@@ -1,0 +1,79 @@
+/*清除默认*/
+*{
+margin:0;
+padding: 0;
+}
+body{
+	/*background:;*/
+	/*background: #AABBCC url(../img/bg_0/21.png) repeat scroll top left;*/
+}
+header{
+	height: 100px;
+	text-align: right;
+	padding-right: 30px;
+	padding-top: 30px;
+	/*background: #ccc;*/
+	
+}
+header a{
+	color: #fff;
+	text-decoration: none;
+	margin-right: 10px;
+	/*background: yellow;*/
+}
+header a:hover{
+	color:#000;
+	font-weight: bold;
+	text-decoration:underline;
+}
+/*导航样式*/
+nav{
+width: 970px;
+height: 350px;
+/*background: #666;*/
+margin:100px auto;
+}
+/*轮播图*/
+nav .banner{
+width:550px;
+height: 350px;
+/*background: #CCCCCC;*/
+float:right;
+}
+/*导航列表*/
+nav ul{
+	float: left;
+}
+nav li{
+	width: 200px;
+	height: 170px;	
+	list-style: none;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	color: #fff;
+	text-align: center;
+	font:20px "楷体";
+	font-weight:100;
+	line-height: 170px;
+	border-radius:10px;
+}
+nav #bt1{
+	background:rgb(151,173,172);
+}
+nav #bt2{
+	background:rgb(28,120,135);
+}
+nav #bt3{
+	background:rgb(222,211,140);
+	clear:left;
+}
+nav #bt4{
+	background:rgb(179,197,135);	
+}
+nav li:hover{
+	opacity:0.8;
+	/*color:#eee;*/
+	font-weight: bold;
+	}
+

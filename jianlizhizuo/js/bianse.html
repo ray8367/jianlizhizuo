@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+	</body>
+	<script type="text/javascript">
+		//获取body
+		var body = document.body;
+		//定义索引
+		var index = 0;
+		//定义一个背景图片的数组,这里面颜色随意改就是
+		var bgList = ["rgb(102,126,160)", "rgb(142,194,158)", "rgb(240,235,209)", "rgb(156,216,253)"];
+		//定时器
+		var timer = setInterval(trunbg, 1000)
+		function trunbg() {        
+			index++;        
+			if(index >= bgList.length) {            
+			index = 0;        
+			}         //根据图片主色设置body的背景
+			body.style.background = bgList[index];    
+		};
+	</script>
+
+</html>

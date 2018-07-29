@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="css/0_1.css"/>
+		<script>
+			var code;
+//生成验证码函数
+function createCode(){
+	code="";
+	var codeLength=6;
+	//获取验证码
+	var checkCode=document.getElementById("checkCode");
+	var selectChar=new String("0123456789abcdefghijklmnopqrstuvwxyz");
+	//随机获取selectChar索引,生成6位随机码
+	for(var i=0;i<codeLength;i++){
+		var charIndex=Math.floor(Math.random()*36);
+//		charAt()表示返回在指定位置的字符,即指定索引 返回字符
+		code+=selectChar.charAt(charIndex);
+	}
+//  console.log(code);	
+//	checkCode.style.background="#ccc";
+//	checkCode.style.background="#ccc";
+//	checkCode.style.color="#951";
+	checkCode.className="yanzhenstyle";
+    checkCode.innerHTML=code;
+}
+onsubmit=function(){
+	//获取输入的字符并全部转换为小写字母
+	var inputCode=document.getElementById("input1").value.toLowerCase();
+	if(inputCode!=code){
+		alert("验证码不正确");
+		createCode();
+		return false;
+	}
+	else{
+		alert("登录成功");
+		return false;
+	}
+}
+//验证函数
+function validate(){
+	
+}
+//createCode();
+			function more(){
+			alert("点着好玩吧！");
+			}
+		</script>
+	</head>
+	<body class="body1"  onload="createCode()">
+		<div class="landing">
+			<form action="0.html" method="post">
+				<h2>登陆用户</h2>
+				<input type="text" name="user" id="user" placeholder="请输入用户名" required="required"  oninvalid="setCustomValidity('请输入用户名')" oninput="setCustomValidity('')" /><br />
+				<input type="password" name="passwd" id="passwd" placeholder="请输入密码" required="required"  oninvalid="setCustomValidity('请输入密码')" oninput="setCustomValidity('')" /><br />
+				<div>
+
+				<div class="yanzhen">
+				<input type="text" id="input1" placeholder="请输入验证码" required="required"  oninvalid="setCustomValidity('请输入验证码')" oninput="setCustomValidity('')" >
+				<span id="checkCode" class="unchanged" onselectstart="return false" onclick="createCode()">yanzhengma</span>
+				</div>
+	</div>
+				<input type="submit" value="立即登录"/>
+					<br />
+			</form>
+			<a href="0_2.html">注册新帐号</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="0.html">取消登录</a>
+			<br /><br /><br />
+			<!--分割线-->
+			<div class="line">
+				<div class="left">
+					<hr />
+				</div>
+				<div>
+					第三方账号登录
+				</div>
+				<div class="right">
+				<hr />
+				</div>
+			</div>
+			<!--第三方-->
+			<div class="icon">
+				<a href="https://wx.qq.com/" title="微信"></a>
+					<a href="http://web2.qq.com/" title="QQ"></a>
+					<a href="http://www.google.com" title="谷歌"></a>
+					<a href="https://weibo.com/login" title="新浪"></a>
+					<a href="javascript:;" onclick="more()" title="其它"></a>
+			</div>
+		</div>
+	</body>
+</html>
